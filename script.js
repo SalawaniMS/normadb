@@ -1,5 +1,3 @@
-// JavaScript Document
-
 var skor = 0;
 var soal = [
   {
@@ -22,7 +20,8 @@ function soalAcak() {
 
 function cekJawapan(jawabBetul) {
   var jawapan = document.getElementById('jawapan-txt').value.trim();
-  if (jawapan = soal[i].jawab.trim()) {
+  var jawabBetul = soal[i].jawab.trim();
+  if (jawapan == jawabBetul) {
     skor++;
     document.getElementById('skor').innerText = skor;
     alert('Jawapan betul! 🎉');
@@ -37,6 +36,6 @@ document.getElementById('btn-hint').addEventListener('click', function() {
 });
 
 document.getElementById('btn-next').addEventListener('click', soalAcak);
-document.getElementById('btn-check').addEventListener('click',cekJawapan);
 
+soalAcak();
 soalAcak();
