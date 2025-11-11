@@ -1,10 +1,5 @@
 // JavaScript Document
 document.getElementById('btn-check').addEventListener('click', function() {
-  alert('Kamu klik Check Answer!');
-  // nanti aku tambah code untuk cek jawapan
-});
-
-document.getElementById('btn-check').addEventListener('click', function() {
   var jawapan = document.getElementById('jawapan-txt').value;
   cekJawapan(jawapan);
 });
@@ -54,4 +49,5 @@ function cekJawapan(jawabBetul) {
 
 document.getElementById('btn-next').addEventListener('click', soalAcak);
 soalAcak();
+
 
