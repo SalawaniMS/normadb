@@ -14,7 +14,7 @@ var soal = [
 
 function soalAcak() {
   var i = Math.floor(Math.random() * soal.length);
-  document.getElementById('contoh-db').innerHTML = '<h2>Contoh Database</h2><pre>${soal[i].db}</pre>';
+  document.getElementById('contoh-db').innerHTML = "<h2>Contoh Database</h2><pre>" + soal[i].db + "</pre>";
   document.getElementById('btn-check').onclick = function() {
     cekJawapan(soal[i].jawab);
   };
@@ -22,8 +22,7 @@ function soalAcak() {
 
 function cekJawapan(jawabBetul) {
   var jawapan = document.getElementById('jawapan-txt').value.trim();
-  var jawabBetul = soal[i].jawab.trim();
-  if (jawapan == jawabBetul) {
+  if (jawapan = soal[i].jawab.trim()) {
     skor++;
     document.getElementById('skor').innerText = skor;
     alert('Jawapan betul! 🎉');
@@ -38,5 +37,6 @@ document.getElementById('btn-hint').addEventListener('click', function() {
 });
 
 document.getElementById('btn-next').addEventListener('click', soalAcak);
+document.getElementById('btn-check').addEventListener('click',cekJawapan);
 
 soalAcak();
