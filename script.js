@@ -12,7 +12,7 @@ var soal = [
 
 function soalAcak() {
   var i = Math.floor(Math.random() * soal.length);
-  document.getElementById('contoh-db').innerHTML = "<h2>Contoh Database</h2><pre>${soal[i].db}</pre>";
+  document.getElementById('contoh-db').innerHTML = '<h2>Contoh Database</h2><pre>${soal[i].db}</pre>';
   document.getElementById('btn-check').onclick = function() {
     cekJawapan(soal[i].jawab);
   };
@@ -39,3 +39,4 @@ document.getElementById('btn-next').addEventListener('click', soalAcak);
 
 soalAcak();
 soalAcak();
+
