@@ -22,6 +22,7 @@ function soalAcak() {
 
 function cekJawapan(jawabBetul) {
   var jawapan = document.getElementById('jawapan-txt').value.trim();
+  var jawabBetul = soal[i].jawab.trim();
   if (jawapan == jawabBetul) {
     skor++;
     document.getElementById('skor').innerText = skor;
