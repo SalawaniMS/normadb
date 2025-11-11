@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NormaDB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Belajar Normalisasi Database</h1>
+  <div id="contoh-db">
+    <h2>Contoh Database</h2>
+    <table>
+      <tr>
+        <th>OrderID</th>
+        <th>CustomerName</th>
+        <th>ProductID</th>
+        <th>ProductName</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>101</td>
+        <td>Phone</td>
+        <td>2</td>
+      </tr>
+    </table>
+  </div>
+  <button id="btn-check">Check Answer</button>
+  <script src="script.js"></script>
+  
+  <div id="jawapan">
+  <h2>Jawapan Kamu (1NF, 2NF, 3NF)</h2>
+  <textarea id="jawapan-txt" rows="10" cols="50"></textarea>
+</div>
+
+<button id="btn-hint">Hint</button>
+<div id="hint-txt"></div>
+
+<button id="btn-next">Soal Lagi</button>
+<div id="score">Skor: <span id="skor">0</span></div>
+<div id="penjelasan"></div>
+
+
+</body>
+</html>
+
